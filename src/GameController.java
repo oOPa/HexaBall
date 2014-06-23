@@ -220,14 +220,13 @@ public class GameController extends Thread implements KeyEventDispatcher
 						ballOutOfBorder = false;
 					}
 					
-					if (ballView.getX() > rect.getWidth() || ballView.getX() < rect.x)
+					if (ballView.getX() > rect.getWidth() || ballView.getX() < rect.x || ballView.getY() < rect.y ||
+							ballView.getY() > (rect.height))
 					{
 						ballOutOfBorder = true;
 					}
 					
 				}
-				
-				
 				
 				if (checkPosition(currentLeftPt, leftPlayerSize, ballView, leftPlayer))
 				{

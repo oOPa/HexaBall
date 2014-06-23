@@ -52,6 +52,7 @@ public class SetupView extends JFrame implements KeyEventDispatcher
 	
 	private LinkedList<Observer> observers = new LinkedList<Observer>();
 
+	/*
 	public static void main(String[] args)
 	{
 		EventQueue.invokeLater(new Runnable() {
@@ -65,6 +66,7 @@ public class SetupView extends JFrame implements KeyEventDispatcher
 			}
 		});
 	}
+	*/
 	
 	public void attach(Observer observer)
 	{
