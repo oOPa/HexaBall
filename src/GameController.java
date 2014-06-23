@@ -113,7 +113,7 @@ public class GameController extends Thread implements KeyEventDispatcher
 					if (ballLocation.y > rect.y) {
 						if (!checkGoalKeeper(keeper1, ballView) || !checkGoalKeeper(keeper2, ballView)) return false;
 						ballLocation.setLocation(ballLocation.x, ballLocation.y - 1);
-						System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
+						//System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
 						ballView.setLocation(ballLocation);
 					} else { 
 						return false;
@@ -125,7 +125,7 @@ public class GameController extends Thread implements KeyEventDispatcher
 					if (ballLocation.y < rect.y + rect.height) {
 						if (!checkGoalKeeper(keeper1, ballView) || !checkGoalKeeper(keeper2, ballView)) return false;
 						ballLocation.setLocation(ballLocation.x, ballLocation.y + 1);
-						System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
+						//System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
 						ballView.setLocation(ballLocation);
 					} else { 
 						return false;
@@ -137,7 +137,7 @@ public class GameController extends Thread implements KeyEventDispatcher
 					if (ballLocation.x > rect.x - ballSize.width) {
 						if (!checkGoalKeeper(keeper1, ballView) || !checkGoalKeeper(keeper2, ballView)) return false;
 						ballLocation.setLocation(ballLocation.x - 1, ballLocation.y);
-						System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
+						//System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
 						ballView.setLocation(ballLocation);
 					} else { 
 						return false;
@@ -149,7 +149,7 @@ public class GameController extends Thread implements KeyEventDispatcher
 					if (ballLocation.x < rect.x + rect.width) {
 						if (!checkGoalKeeper(keeper1, ballView) || !checkGoalKeeper(keeper2, ballView)) return false;
 						ballLocation.setLocation(ballLocation.x + 1, ballLocation.y);
-						System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
+						//System.out.println("Ballx: " + ballLocation.x + " Bally: " + ballLocation.y);
 						ballView.setLocation(ballLocation);
 					} else { 
 						return false;
