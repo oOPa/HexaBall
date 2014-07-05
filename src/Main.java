@@ -50,7 +50,7 @@ public class Main
 		    		}
 		    		
 		    		setupView.pack();
-		    		setupView.show();
+		    		setupView.setVisible(true);
 		        }
 		});
 	}
